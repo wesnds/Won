@@ -3,13 +3,13 @@
 **WON will be built using**:
 
 <table>
-  <tr style>
+  <tr>
     <td>TypeScript</td>
-    <td>React</td>
+    <td>Styled Components</td>
   </tr>
   <tr>
+    <td>React</td>
     <td>NextJS</td>
-    <td>Styled Components</td>
   </tr>
   <tr>
     <td>GraphQL</td>
@@ -24,7 +24,11 @@
     <td>Storybook</td>
   </tr>
   <tr>
-    <td>Strapi</td>
     <td>Husky</td>
+    <td>Github Actions</td>
+  </tr>
+  <tr>
+    <td>Plop</td>
+    <td>Strapi</td>
   </tr>
 </table>
