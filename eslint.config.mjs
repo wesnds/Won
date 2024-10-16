@@ -1,5 +1,7 @@
 import react from "eslint-plugin-react";
 import typescriptEslint from "@typescript-eslint/eslint-plugin";
+import _import from "eslint-plugin-import";
+import { fixupPluginRules } from "@eslint/compat";
 import globals from "globals";
 import tsParser from "@typescript-eslint/parser";
 import path from "node:path";
@@ -22,15 +24,11 @@ export default [...compat.extends(
     "plugin:react/recommended",
     "next/typescript",
     "prettier",
-).map(config => ({
-    ...config,
-    files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"],
-})), {
-    files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"],
-
+), {
     plugins: {
         react,
         "@typescript-eslint": typescriptEslint,
+        import: fixupPluginRules(_import),
     },
 
     languageOptions: {
@@ -51,9 +49,5 @@ export default [...compat.extends(
         "@typescript-eslint/explicit-module-boundary-types": "off",
         "@typescript-eslint/no-unused-vars": "warn",
         "no-unused-vars": "warn",
-
-        "eslint-plugin-import/no-anonymous-default-export": ["error", {
-            allowArray: true,
-        }],
     },
 }];
