@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1729118013396" clover="3.2.0">
+  <project timestamp="1729118013396" name="All files">
+    <metrics statements="8" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1" elements="10" coveredelements="3" complexity="0" loc="8" ncloc="8" packages="2" files="2" classes="2"/>
+    <package name="app">
+      <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="layout.tsx" path="C:\Users\wesnd\Documents\cursos\won\src\app\layout.tsx">
+        <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="componens.main">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="index.tsx" path="C:\Users\wesnd\Documents\cursos\won\src\componens\main\index.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
