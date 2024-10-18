@@ -12,7 +12,9 @@ const config: Config = {
   collectCoverageFrom: [
     'src/**/*.ts(x)?',
     '!src/app/**', // should be tested in e2e
-    '!src/lib/registry.tsx'
+    '!src/lib/registry.tsx',
+    '!src/types/**',
+    '!src/styles/**'
   ],
   coverageDirectory: 'tests/coverage',
   coveragePathIgnorePatterns: ['\\\\node_modules\\\\'],
@@ -36,6 +38,10 @@ const config: Config = {
         configFile: path.resolve(__dirname, 'babel.config.js')
       }
     ]
+  },
+  moduleNameMapper: {
+    '^styled-components':
+      'styled-components/dist/styled-components.browser.cjs.js'
   }
 }
 

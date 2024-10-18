@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1729267250009" clover="3.2.0">
-  <project timestamp="1729267250009" name="All files">
+<coverage generated="1729268814833" clover="3.2.0">
+  <project timestamp="1729268814833" name="All files">
     <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="6" coveredelements="6" complexity="0" loc="5" ncloc="5" packages="1" files="2" classes="2"/>
     <file name="index.tsx" path="C:\Users\wesnd\Documents\cursos\won\src\components\main\index.tsx">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <line num="1" count="1" type="stmt"/>
       <line num="3" count="1" type="stmt"/>
-      <line num="11" count="2" type="stmt"/>
+      <line num="11" count="3" type="stmt"/>
     </file>
     <file name="styles.ts" path="C:\Users\wesnd\Documents\cursos\won\src\components\main\styles.ts">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <line num="3" count="1" type="stmt"/>
-      <line num="5" count="1" type="stmt"/>
+      <line num="5" count="2" type="stmt"/>
     </file>
   </project>
 </coverage>

@@ -25,6 +25,7 @@
     "react/react-in-jsx-scope": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/no-unused-vars": "warn",
+    "@typescript-eslint/no-unsafe-function-type": "off",
     "no-unused-vars": "warn"
   }
 }

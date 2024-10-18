@@ -3,10 +3,10 @@ SF:src\components\main\index.tsx
 FN:3,(anonymous_4)
 FNF:1
 FNH:1
-FNDA:1,(anonymous_4)
+FNDA:2,(anonymous_4)
 DA:1,1
 DA:3,1
-DA:11,2
+DA:11,3
 LF:3
 LH:3
 BRF:0
@@ -17,7 +17,7 @@ SF:src\components\main\styles.ts
 FNF:0
 FNH:0
 DA:3,1
-DA:5,1
+DA:5,2
 LF:2
 LH:2
 BRF:0
