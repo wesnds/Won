@@ -9,7 +9,11 @@ const createJestConfig = nextJest({
 const config: Config = {
   clearMocks: true,
   collectCoverage: true,
-  collectCoverageFrom: ['src/**/*.ts(x)?'],
+  collectCoverageFrom: [
+    'src/**/*.ts(x)?',
+    '!src/app/**', // should be tested in e2e
+    '!src/lib/registry.tsx'
+  ],
   coverageDirectory: 'tests/coverage',
   coveragePathIgnorePatterns: ['\\\\node_modules\\\\'],
   coverageProvider: 'babel',
