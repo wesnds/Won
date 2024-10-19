@@ -17,13 +17,16 @@ const compat = new FlatCompat({
     allConfig: js.configs.all
 });
 
-export default [...compat.extends(
+export default [{
+    ignores: ["!**/.storybook", "!**/.jest", "**/generators"],
+}, ...compat.extends(
     "next/core-web-vitals",
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
     "next/typescript",
     "prettier",
+    "plugin:storybook/recommended",
 ), {
     plugins: {
         react,
@@ -49,6 +52,7 @@ export default [...compat.extends(
         "@typescript-eslint/explicit-module-boundary-types": "off",
         "@typescript-eslint/no-unused-vars": "warn",
         "@typescript-eslint/no-unsafe-function-type": "off",
+        "@typescript-eslint/no-explicit-any": "off",
         "no-unused-vars": "warn",
     },
 }];
