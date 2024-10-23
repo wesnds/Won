@@ -6,9 +6,10 @@
   "scripts": {
     "build": "strapi build",
     "deploy": "strapi deploy",
-    "develop": "docker-compose up -d && strapi develop",
+    "develop": "strapi develop",
     "start": "strapi start",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "@ckeditor/strapi-plugin-ckeditor": "^1.0.2",
