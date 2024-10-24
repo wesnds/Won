@@ -53,6 +53,7 @@ export default [{
         "@typescript-eslint/no-unused-vars": "warn",
         "@typescript-eslint/no-unsafe-function-type": "off",
         "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/no-implicit-any": "off",
         "no-unused-vars": "warn",
     },
 }];
