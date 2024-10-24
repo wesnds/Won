@@ -1,6 +1,5 @@
 import Icon from './extensions/icon.png'
 import Logo from './extensions/logo.svg'
-
 export default {
   config: {
     auth: {
@@ -13,8 +12,8 @@ export default {
     translations: {
       en: {
         'Auth.form.welcome.title': 'Welcome to Won Games!',
-        'Auth.form.welcome.subtitle': 'Please log in to continue.',
-        'app.components.LeftMenu.navbrand.title': 'Dashboard'
+        'Auth.form.welcome.subtitle': 'Log in to your account',
+        'app.components.LeftMenu.navbrand.title': 'Won Games Dashboard'
       }
     },
     menu: {
@@ -31,7 +30,8 @@ export default {
           neutral100: '#030415'
         }
       }
-    }
+    },
+    tutorials: false
   },
   bootstrap() {}
 }

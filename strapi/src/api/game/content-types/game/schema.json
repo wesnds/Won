@@ -21,19 +21,13 @@
       "targetField": "name"
     },
     "short_description": {
-      "type": "text"
+      "type": "string"
     },
     "description": {
-      "type": "customField",
-      "options": {
-        "output": "HTML",
-        "preset": "rich"
-      },
-      "customField": "plugin::ckeditor.CKEditor"
+      "type": "richtext"
     },
     "price": {
       "type": "decimal",
-      "required": true,
       "default": 0
     },
     "release_date": {
@@ -64,20 +58,15 @@
       "required": false,
       "allowedTypes": [
         "images",
-        "audios",
-        "videos"
+        "files",
+        "videos",
+        "audios"
       ]
     },
     "categories": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::category.category",
-      "inversedBy": "games"
-    },
-    "platforms": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::platform.platform",
       "inversedBy": "games"
     },
     "developers": {
@@ -90,6 +79,12 @@
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::publisher.publisher",
+      "inversedBy": "games"
+    },
+    "platforms": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::platform.platform",
       "inversedBy": "games"
     }
   }
